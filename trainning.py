@@ -108,7 +108,7 @@ for v in GS_DICT[0].nodes:
         f"C4_{v}"
     )
 #C5
-for vw in G.edges:
+for vw in GS_DICT[0].edges:
     for i in G.nodes:
         problem += (
             (
