@@ -140,10 +140,10 @@ print(problem)
 def makegraph(n,r_Nodes:list,r_Edges:list):
     G= nx.DiGraph()
     for i in range(n):
-        G.add_node(i, a=r_Nodes[i]) # add node with attribute a = 10
+        G.add_node(i, a=r_Nodes[i]) 
     for i in range(n-1):
-        G.add_edge(i, i+1, a=r_Edges[i]) # add link with attribute a = 10
-        G.add_edge(i+1, i, a=r_Edges[i]) # add link with attribute a = 10
+        G.add_edge(i, i+1, a=r_Edges[i]) 
+        G.add_edge(i+1, i, a=r_Edges[i]) 
     return G
 
 
