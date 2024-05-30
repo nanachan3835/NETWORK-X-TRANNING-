@@ -135,3 +135,17 @@ problem += (
 )
 
 print(problem)
+
+# function to make graph
+def makegraph(n,r_Nodes:list,r_Edges:list):
+    G= nx.DiGraph()
+    for i in range(n):
+        G.add_node(i, a=r_Nodes[i]) # add node with attribute a = 10
+    for i in range(n-1):
+        G.add_edge(i, i+1, a=r_Edges[i]) # add link with attribute a = 10
+        G.add_edge(i+1, i, a=r_Edges[i]) # add link with attribute a = 10
+    return G
+
+
+GS_list={G1:makegraph(3,[2,2,2],[5,5]),G2:makegraph(3,[2,2,2],[5,5])}
+print(GS_list[G1].nodes)
