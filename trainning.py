@@ -45,7 +45,7 @@ rNode = nx.get_node_attributes(GS_DICT, "r")
 rEdge = nx.get_edge_attributes(GS_DICT, "r")
 
 print(G.edges)
-print( G.get_edge_data(0,1r))
+print( G.get_edge_data(0,1r ))
 
 
 xNode = plp.LpVariable.dicts(
